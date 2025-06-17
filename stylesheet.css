@@ -1,0 +1,15 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #313131;
+  color: #fff;
+  line-height: 1.6;
+}
+... (trimmed here but will paste in full in real execution) ...
