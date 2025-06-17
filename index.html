@@ -15,12 +15,12 @@
     <nav class="navbar" id="navbar">
       <a href="#home">Home</a>
       <a href="#about">Who We Are</a>
+      <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <a href="#contact" class="gradient-btn">Contact Us</a>
-
     <i class="bx bx-menu" id="menu-icon"></i>
   </header>
 
@@ -42,6 +42,99 @@
       <img src="rosolve-logo.png" alt="Rosolve Logo">
     </div>
   </section>
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="team-photo.jpg" alt="Rosolve Team">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">Who We Are</h2>
+      <p>
+        At Rosolve, our mission is to revolutionize transportation with inclusive, tech-powered solutions.
+        Our core values include safety, empowerment, and community.
+      </p>
+      <p>
+        Our flagship project, SheGo, is a ride-hailing service built by women, for women—designed to ensure
+        safer, more confident travel experiences. We are a growing team of developers, designers, and
+        entrepreneurs with a passion for impact.
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="heading">What We Do</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-car"></i>
+          <h4>Urban Mobility Solutions</h4>
+          <p>We design transport solutions for underserved demographics, ensuring inclusive and safe mobility experiences.</p>
+        </div>
+      </div>
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-code"></i>
+          <h4>Tech Consulting</h4>
+          <p>Rosolve provides consulting on app development, system design, and implementation for startups and civic innovation.</p>
+        </div>
+      </div>
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bxs-rocket"></i>
+          <h4>Startup Product Development</h4>
+          <p>From idea to launch, we help entrepreneurs build and scale tech products that address real-world problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="projects-box">
+      <div class="projects-card">
+        <img src="shego.png" alt="SheGo App">
+        <h3>SheGo</h3>
+        <p>SheGo is our flagship ride-hailing platform for women. It connects female passengers with female drivers, providing safer transport and economic opportunities.</p>
+        <div class="btn">
+          <a href="#" class="btn" target="_blank">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Us</span></h2>
+    <form action="contact_process.php" method="POST">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" name="full_name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+          <input type="number" name="phone_number" placeholder="Phone Number" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+      </div>
+      <div class="input-group-2">
+        <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/rosolve" target="_blank"><i class="bx bxl-github"></i></a>
+    </div>
+    <ul class="list">
+      <li><a href="#about">Who We Are</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">
+      © Rosolve | All Rights Reserved
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
