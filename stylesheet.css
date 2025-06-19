@@ -35,6 +35,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  max-width: 100%;
 }
 
 .team-member img {
@@ -52,6 +53,7 @@ img {
 .team-member div {
   flex: 1;
   min-width: 250px;
+  max-width: 700px;
 }
 
 .team-member h3 {
@@ -64,6 +66,7 @@ img {
   font-size: 1rem;
   line-height: 1.5;
   color: #ddd;
+  word-wrap: break-word;
 }
 
 .subheading {
