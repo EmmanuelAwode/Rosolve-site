@@ -44,6 +44,13 @@ img {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.team-member img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 .team-member:nth-child(even) {
@@ -127,6 +134,50 @@ textarea:focus {
 input[type="submit"] {
   align-self: flex-start;
   cursor: pointer;
+}
+
+/* Services Section Fix */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.service-box {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(255,255,255,0.1);
+}
+
+.service-box i {
+  font-size: 2rem;
+  color: hotpink;
+  margin-bottom: 0.5rem;
+}
+
+.service-box h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.4;
 }
 
 /* Keep existing styles below unchanged */
@@ -223,6 +274,18 @@ input[type="submit"] {
     text-align: center;
   }
 }
+.thank-you-container {
+  padding-top: 200px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
 
 section {
   scroll-margin-top: 120px;
@@ -280,3 +343,4 @@ section {
 .footer a:hover {
   color: hotpink;
 }
+
